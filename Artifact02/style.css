@@ -21,6 +21,7 @@
 }
 
 #footer {
+  
  position:fixed;
  bottom:0px;
  left:0px; 
@@ -37,10 +38,10 @@ body {
 }
 
 #container {
- margin-top:15%;
+ margin-top:5%;
  margin-left:10%;
  margin-right:10%;
- margin-bottom:15%;
+ margin-bottom:13%;
 }
 
 #title {
