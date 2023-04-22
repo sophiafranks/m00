@@ -7,7 +7,7 @@
 .white{
  border: 2px solid black;
  width: 11%;
- height: 70px;
+ height: 80px;
  background-color:white;
  float:left;
 }
@@ -15,23 +15,11 @@
 .black{
  border: 2px solid black;
  width: 11%;
- height: 70px;
+ height: 80px;
  background-color:#787878;
  float:left;
 }
 
-#footer {
-  
- position:fixed;
- bottom:0px;
- left:0px; 
- padding:5px;
- margin:0px;
- width:100%;
- background-color:lightyellow;
- text-align:center; 
- 
-}
 
 body {
  background-image:url("https://rb.gy/ubtj8");
@@ -41,14 +29,26 @@ body {
  margin-top:5%;
  margin-left:10%;
  margin-right:10%;
- margin-bottom:13%;
+ margin-bottom:8%;
 }
 
+#footer {
+  
+ position:fixed;
+ bottom:0px;
+ left:0px; 
+ right:0px;
+ padding:5px;
+ margin:0px;
+ background-color:lightyellow;
+ text-align:center; 
+ 
+}
 #title {
  position:fixed;
  top:0px;
- left:0px; 
- padding:10px;
+ left:0px;
+ padding:15px;
  margin:0px;
  width:100%;
  background-color:lightyellow;
