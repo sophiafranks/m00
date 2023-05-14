@@ -1,0 +1,11 @@
+#upLeft, #upRight{
+  display: inline-block;
+}
+
+#downLeft, #downRight{
+  display: inline-block;
+}
+
+.up {
+  
+}
