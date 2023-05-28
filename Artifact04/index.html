@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
+  
 <head>
   <title>
     Artifact #4
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <form action="thankyou.html" id="myform">
+  <form action="https://sophiafranks.github.io/moo/Artifact04/thankyou.html" id="myform">
     <p>
       <label for='FirstName'>First Name:</label>
       <input type="text" id="FirstName" name="FirstName" /> </p>
@@ -140,18 +140,21 @@
     frmvalidator.addValidation("LastName", "req", "Please enter your Last Name");
     frmvalidator.addValidation("LastName", "maxlen=20", "Max length is 20");
 
-    frmvalidator.addValidation("Email", "maxlen=50");
+    frmvalidator.addValidation("Email", "maxlen=50", "Max length for Email is 50");
     frmvalidator.addValidation("Email", "req", "Please enter your email address");
     frmvalidator.addValidation("Email", "email", "Invalid email format");
 
-    frmvalidator.addValidation("Phone", "maxlen=15");
+    frmvalidator.addValidation("Phone", "maxlen=15", "Max length for Phone is 15");
     frmvalidator.addValidation("Phone", "numeric", "Numeric characters only");
 
-    frmvalidator.addValidation("Address", "req", "maxlen=50", "Please enter your address");
+    frmvalidator.addValidation("Address","maxlen=50", "Max length for Address is 50");
+    frmvalidator.addValidation("Address", "req", "Please enter your address");
 
-    frmvalidator.addValidation("Country", "req", "dontselect=000", "Please select your country");
-
-    frmvalidator.addValidation("State", "req", "dontselect=000", "Please select your state");
+    frmvalidator.addValidation("Country", "dontselect=000", "Please select your country");
+    frmvalidator.addValidation("Country", "req", "Please select your country");
+    
+    frmvalidator.addValidation("State", "req", "Please select your state");
+    frmvalidator.addValidation("State", "dontselect=000", "Please select your state");
 
     frmvalidator.addValidation("City", "req", "Please enter your city");
 
