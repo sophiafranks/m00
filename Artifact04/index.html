@@ -231,11 +231,11 @@
     frmvalidator.addValidation("Phone", "maxlen=15");
     frmvalidator.addValidation("Phone", "numeric", "Numeric characters only");
 
-    frmvalidator.addValidation("Address", "maxlen=50", "Please enter your address");
+    frmvalidator.addValidation("Address", "req", "maxlen=50", "Please enter your address");
 
-    frmvalidator.addValidation("Country", "dontselect=000", "Please select your country");
+    frmvalidator.addValidation("Country", "req", "dontselect=000", "Please select your country");
 
-    frmvalidator.addValidation("State", "dontselect=000", "Please select your state");
+    frmvalidator.addValidation("State", "req", "dontselect=000", "Please select your state");
 
     frmvalidator.addValidation("City", "req", "Please enter your city");
 
@@ -247,7 +247,7 @@
 
     frmvalidator.addValidation("Comments", "maxleng=200");
 
-    frmvalidator.addValidation("ZipCode", "req", "Please enter a zipcode");
+    frmvalidator.addValidation("Zipcode", "req", "Please enter a zipcode", "VWZ_IsListItemSelected(document.forms['myform'].elements['Country'],'840')");
   </script>
 </body>
 
