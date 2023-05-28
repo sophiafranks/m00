@@ -4,7 +4,7 @@
 
 <head>
   <title>
-    JavaScript form validator Example
+    FORM VALIDATION 
   </title>
   <script src="index.js" type="text/javascript"></script>
 </head>
@@ -119,10 +119,10 @@
           <td>
             City
             <td>
-            <input type="text" name="City">
+              <input type="text" name="City">
+            </td>
           </td>
-          </td>
-         <tr>
+          <tr>
             <td>
               State
             </td>
@@ -180,59 +180,72 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
               </select>
-            <tr>
+              <tr>
+                <td>
+                  Comments
+                </td>
+                <td>
+                  <input type="text" name="Comments">
+                </td>
+                <tr>
         <td>
-          Comments
+          ZipCode
         </td>
         <td>
-          <input type="text" name="Comments">
+          <input type="text" name="ZipCode">
         </td>
       </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input type="submit" value="Submit">
-            </td>
-          </tr>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="submit" value="Submit">
+                </td>
+              </tr>
     </table>
   </form>
-  <script src="index.js" type="text/javascript">
-    //<![CDATA[
-    //You should create the validator only after the definition of the HTML form
-    var frmvalidator = new Validator("myform");
-    frmvalidator.addValidation("FirstName", "req", "Please enter your First Name");
-    frmvalidator.addValidation("FirstName", "maxlen=20", "Max length for FirstName is 20");
-    frmvalidator.addValidation("FirstName", "alpha", "Alphabetic chars only");
+<div id="myform_errorloc" class="error_strings" style="visibility: visible;"><a name="myform_errorloc_loc"></div>
 
-    frmvalidator.addValidation("LastName", "req", "Please enter your Last Name");
-    frmvalidator.addValidation("LastName", "maxlen=20", "Max length is 20");
+      <script src="index.js" type="text/javascript">
+    
+        var frmvalidator = new Validator("myform");
+        frmvalidator.EnableMsgsTogether();
+        frmvalidator.EnableOnPageErrorDisplaySingleBox();
 
-    frmvalidator.addValidation("Email", "maxlen=50");
-    frmvalidator.addValidation("Email", "req", "req");
-    frmvalidator.addValidation("Email", "email", "req");
+        frmvalidator.addValidation("FirstName", "req", "Please enter your First Name");
+        frmvalidator.addValidation("FirstName", "maxlen=20", "Max length for FirstName is 20");
+        frmvalidator.addValidation("FirstName", "alpha", "Alphabetic chars only");
 
-    frmvalidator.addValidation("Phone", "maxlen=15");
-    frmvalidator.addValidation("Phone", "numeric", "req");
+        frmvalidator.addValidation("LastName", "req", "Please enter your Last Name");
+        frmvalidator.addValidation("LastName", "maxlen=20", "Max length is 20");
 
-    frmvalidator.addValidation("Address", "maxlen=50", "req");
-    
-    frmvalidator.addValidation("Country", "dontselect=000", "req");
-    
-    frmvalidator.addValidation("State", "dontselect=000", "req");
-    
-    frmvalidator.addValidation("City", "req");
-    
-    frmvalidator.addValidation("UserName", "mexlen=12");
-    frmvalidator.addValidation("UserName", "req","req");
-    
-    frmvalidator.addValidation("Password", "maxlen=7", "req");
-    frmvalidator.addValidation("Password", "req", "req");
-    
-    frmvalidator.addValidation("Comments", "maxleng=200");
-    
-    
-    
-     </script>
+        frmvalidator.addValidation("Email", "maxlen=50");
+        frmvalidator.addValidation("Email", "req", "req");
+        frmvalidator.addValidation("Email", "email", "req");
+
+        frmvalidator.addValidation("Phone", "maxlen=15");
+        frmvalidator.addValidation("Phone", "numeric", "req");
+
+        frmvalidator.addValidation("Address", "maxlen=50", "req");
+
+        frmvalidator.addValidation("Country", "dontselect=000", "req");
+
+        frmvalidator.addValidation("State", "dontselect=000", "req");
+
+        frmvalidator.addValidation("City", "req");
+
+        frmvalidator.addValidation("UserName", "mexlen=12");
+        frmvalidator.addValidation("UserName", "req", "req");
+
+        frmvalidator.addValidation("Password", "maxlen=7", "req");
+        frmvalidator.addValidation("Password", "req", "req");
+
+        frmvalidator.addValidation("Comments", "maxleng=200");
+        
+        frmvalidator.addValidation("ZipCode", "req", "Please enter a zipcode", "VWZ_IsListItemSelected(document.forms['myform'].elements['Country'],'840')");
+        
+        
+      </script>
 </body>
 
 </html>
