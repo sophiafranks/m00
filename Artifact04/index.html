@@ -158,7 +158,7 @@
 
     frmvalidator.addValidation("City", "req", "Please enter your city");
 
-    frmvalidator.addValidation("UserName", "mexlen=12");
+    frmvalidator.addValidation("UserName", "maxlen=12");
     frmvalidator.addValidation("UserName", "req", "Please enter a username");
 
     frmvalidator.addValidation("Password", "maxlen=7", "Password must be maximum 7 characters");
@@ -166,7 +166,7 @@
 
     frmvalidator.addValidation("Comments", "maxleng=200");
 
-    frmvalidator.addValidation("Zipcode", "req", "Please enter a zipcode", "VWZ_IsListItemSelected(document.forms['myform'].elements['Country'],'840')");
+    frmvalidator.addValidation("ZipCode", "req", "Please enter a zipcode", "VWZ_IsListItemSelected(document.forms['myform'].elements['Country'],'840')");
   </script>
 </body>
 
