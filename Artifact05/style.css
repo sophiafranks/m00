@@ -8,9 +8,9 @@ body {
 
 .slideshow-container {
   position: relative;
-  width: 60%;
+  width: 50%;
   max-width: 50%;
-  margin: 60px auto 10px; 
+  margin: 60px auto 60px; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,7 +44,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 60px; 
+  bottom: -40px; 
   
 }
 
@@ -71,6 +71,8 @@ footer {
   max-width: 800px;
   margin: 0 auto;
 }
+
+
 
 @media (max-width: 768px) {
   .slideshow-container {
