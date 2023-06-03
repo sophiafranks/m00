@@ -8,12 +8,12 @@ body {
 .slideshow-container {
   position: relative;
   width: 90%;
-  max-width: 70vw;
+  max-width: 90vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 90vh;
 }
 .slide {
   display: none;
