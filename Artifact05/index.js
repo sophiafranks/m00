@@ -1,9 +1,9 @@
-
-//Slideshow
-
 document.addEventListener("DOMContentLoaded", function() {
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
+
+
+  slides[currentSlide].style.display = "block";
 
   function showSlide(n) {
     slides[currentSlide].style.display = "none";
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide - 1);
   }
 
-  setInterval(nextSlide, 4000); // Change slide every 4 seconds
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
-  // Buttons
+  // Add event listeners to the buttons
   document.querySelector(".prev-btn").addEventListener("click", previousSlide);
   document.querySelector(".next-btn").addEventListener("click", nextSlide);
 });
