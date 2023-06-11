@@ -167,7 +167,7 @@ a:hover {
 }
 #playButton {
   position: absolute;
-  top: 5.5%;
+  top: 4.5%;
   right: -400px;
   transform: translateY(-60%);
   margin: 0;
