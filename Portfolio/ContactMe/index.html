@@ -47,36 +47,25 @@
       <p>
         Please fill out the fields below
       </p>
-      <form action="https://sophiafranks.github.io/moo/Portfolio/thankyou" method="get">
-        <label for="fname">Name:</label>
-        <br>
-        <input type="text" id="fname" name="fname">
-        <br>
-        <label for="email">Email:</label>
-        <br>
-        <input type="text" id="email" name="email">
-        <br>
-        <label for="comment">Comments:</label>
-        <br>
-        <input type="text" id="comment" name="comment">
-        <br>
-        <br>
-          <input type="submit" value="Submit">
-        
-      </form>
 
-
-      <img src="pic3.jpg" alt="">
-
-      <div class="cleft">
-        <img src="pic1.jpg" alt="">
-      </div>
-
-      <div class="cright">
-        <img src="pic2.jpg" alt="">
-      </div>
-
-      <div class="clear"> </div>
+<form id="myForm" action="https://sophiafranks.github.io/moo/Portfolio/thankyou" method="get" onsubmit="return validateForm(event)">
+  <div class="form-group">
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="fname">
+    <span id="error-fname" class="error-message"></span>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span id="error-email" class="error-message"></span>
+  </div>
+  <div class="form-group">
+    <label for="comment">Comments:</label>
+    <input type="text" id="comment" name="comment">
+    <span id="error-comment" class="error-message"></span>
+  </div>
+  <input type="submit" value="Submit">
+</form>
 
     </div>
 
@@ -112,6 +101,9 @@
     </div>
 
   </div>
+  
+  <script src="index.js"></script>
+
 </body>
 
 </html>
