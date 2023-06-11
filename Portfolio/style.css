@@ -10,7 +10,7 @@ a {
   color: #000088;
 }
 a:hover {
-  /* color: #c30b4e; */
+   color: #c30b4e; 
 }
 #wrap {
   margin: 60px auto;
@@ -115,6 +115,7 @@ a:hover {
   float: left;
   width: 580px;
   margin: 10px 0 40px 40px;
+  position: relative;
 }
 #content h2 {
   font-weight: normal;
@@ -164,3 +165,47 @@ a:hover {
 .clear {
   clear: both;
 }
+#playButton {
+  position: absolute;
+  top: 5.5%;
+  right: -400px;
+  transform: translateY(-60%);
+  margin: 0;
+  padding: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  width: 80px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+}
+
+#playButton img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+.form-group {
+   display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+  input[type="text"] {
+    height: 15px;
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+
+
+
+
+
