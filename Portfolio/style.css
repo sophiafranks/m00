@@ -204,4 +204,9 @@ a:hover {
     font-size: 0.8rem;
     margin-top: 0.2rem;
   }
+.quote-container {
+  padding: 15px;
+  margin-left: 40px; 
+}
+
 
