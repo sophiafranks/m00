@@ -5,6 +5,11 @@ var pauseIcon = document.getElementById("pauseIcon");
 
 // Play the audio when the page loads
 window.addEventListener("load", function() {
+  audio.addEventListener("ended", function() {
+    audio.currentTime = 0; // Reset the audio to the beginning !!
+    audio.play(); // Play the audio again <3
+  });
+
   audio.play();
   showPauseIcon();
 });
